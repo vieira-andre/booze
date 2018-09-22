@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B4741B88-E5D3-4BE8-8653-FE0EADE48A0E}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Booze</RootNamespace>
+    <AssemblyName>Booze</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>pt-BR%3ben%3bpt</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Booze.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Booze.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <ExpressionBlendVersion>5.0.40218.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Ajustes.xaml.cs">
+      <DependentUpon>Ajustes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Busca.xaml.cs">
+      <DependentUpon>Busca.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Agrupamento.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\AuthAccess.cs" />
+    <Compile Include="Classes\Bar.cs" />
+    <Compile Include="Classes\DiaSemana.cs" />
+    <Compile Include="Classes\Helper.cs" />
+    <Compile Include="Classes\LocalizedStrings.cs" />
+    <Compile Include="Classes\Push.cs" />
+    <Compile Include="Classes\CollectionSorter.cs" />
+    <Compile Include="Data\BarModelRaiz.cs" />
+    <Compile Include="Detalhe.xaml.cs">
+      <DependentUpon>Detalhe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Favoritos.xaml.cs">
+      <DependentUpon>Favoritos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Inter.xaml.cs">
+      <DependentUpon>Inter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.en.Designer.cs">
+      <DependentUpon>AppResources.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <DependentUpon>AppResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\AppResources.pt.Designer.cs">
+      <DependentUpon>AppResources.pt.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\AppResources.pt-BR.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.pt-BR.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Sobre.xaml.cs">
+      <DependentUpon>Sobre.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Submit.xaml.cs">
+      <DependentUpon>Submit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Trajeto.xaml.cs">
+      <DependentUpon>Trajeto.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Ajustes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Busca.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Detalhe.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Favoritos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Inter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Sobre.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Submit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Trajeto.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\boozedb.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="images\app\spinner.png" />
+    <Content Include="images\bars\1.jpg" />
+    <Content Include="images\bars\100.jpg" />
+    <Content Include="images\bars\101.jpg" />
+    <Content Include="images\bars\103.jpg" />
+    <Content Include="images\bars\104.jpg" />
+    <Content Include="images\bars\106.jpg" />
+    <Content Include="images\bars\109.jpg" />
+    <Content Include="images\bars\110.jpg" />
+    <Content Include="images\bars\111.jpg" />
+    <Content Include="images\bars\112.jpg" />
+    <Content Include="images\bars\113.jpg" />
+    <Content Include="images\bars\114.jpg" />
+    <Content Include="images\bars\115.jpg" />
+    <Content Include="images\bars\116.jpg" />
+    <Content Include="images\bars\117.jpg" />
+    <Content Include="images\bars\118.jpg" />
+    <Content Include="images\bars\119.jpg" />
+    <Content Include="images\bars\12.jpg" />
+    <Content Include="images\bars\120.jpg" />
+    <Content Include="images\bars\121.jpg" />
+    <Content Include="images\bars\122.jpg" />
+    <Content Include="images\bars\123.jpg" />
+    <Content Include="images\bars\125.jpg" />
+    <Content Include="images\bars\126.jpg" />
+    <Content Include="images\bars\128.jpg" />
+    <Content Include="images\bars\129.jpg" />
+    <Content Include="images\bars\13.jpg" />
+    <Content Include="images\bars\130.jpg" />
+    <Content Include="images\bars\131.jpg" />
+    <Content Include="images\bars\133.jpg" />
+    <Content Include="images\bars\134.jpg" />
+    <Content Include="images\bars\135.jpg" />
+    <Content Include="images\bars\136.jpg" />
+    <Content Include="images\bars\137.jpg" />
+    <Content Include="images\bars\138.jpg" />
+    <Content Include="images\bars\139.jpg" />
+    <Content Include="images\bars\14.jpg" />
+    <Content Include="images\bars\140.jpg" />
+    <Content Include="images\bars\141.jpg" />
+    <Content Include="images\bars\142.jpg" />
+    <Content Include="images\bars\143.jpg" />
+    <Content Include="images\bars\144.jpg" />
+    <Content Include="images\bars\145.jpg" />
+    <Content Include="images\bars\146.jpg" />
+    <Content Include="images\bars\147.jpg" />
+    <Content Include="images\bars\15.jpg" />
+    <Content Include="images\bars\150.jpg" />
+    <Content Include="images\bars\151.jpg" />
+    <Content Include="images\bars\152.jpg" />
+    <Content Include="images\bars\153.jpg" />
+    <Content Include="images\bars\154.jpg" />
+    <Content Include="images\bars\156.jpg" />
+    <Content Include="images\bars\157.jpg" />
+    <Content Include="images\bars\158.jpg" />
+    <Content Include="images\bars\159.jpg" />
+    <Content Include="images\bars\16.jpg" />
+    <Content Include="images\bars\162.jpg" />
+    <Content Include="images\bars\163.jpg" />
+    <Content Include="images\bars\164.jpg" />
+    <Content Include="images\bars\165.jpg" />
+    <Content Include="images\bars\166.jpg" />
+    <Content Include="images\bars\167.jpg" />
+    <Content Include="images\bars\168.jpg" />
+    <Content Include="images\bars\170.jpg" />
+    <Content Include="images\bars\172.jpg" />
+    <Content Include="images\bars\173.jpg" />
+    <Content Include="images\bars\174.jpg" />
+    <Content Include="images\bars\175.jpg" />
+    <Content Include="images\bars\176.jpg" />
+    <Content Include="images\bars\177.jpg" />
+    <Content Include="images\bars\178.jpg" />
+    <Content Include="images\bars\179.jpg" />
+    <Content Include="images\bars\18.jpg" />
+    <Content Include="images\bars\180.jpg" />
+    <Content Include="images\bars\181.jpg" />
+    <Content Include="images\bars\182.jpg" />
+    <Content Include="images\bars\184.jpg" />
+    <Content Include="images\bars\185.jpg" />
+    <Content Include="images\bars\186.jpg" />
+    <Content Include="images\bars\188.jpg" />
+    <Content Include="images\bars\189.jpg" />
+    <Content Include="images\bars\19.jpg" />
+    <Content Include="images\bars\190.jpg" />
+    <Content Include="images\bars\2.jpg" />
+    <Content Include="images\bars\20.jpg" />
+    <Content Include="images\bars\21.jpg" />
+    <Content Include="images\bars\22.jpg" />
+    <Content Include="images\bars\25.jpg" />
+    <Content Include="images\bars\27.jpg" />
+    <Content Include="images\bars\28.jpg" />
+    <Content Include="images\bars\29.jpg" />
+    <Content Include="images\bars\3.jpg" />
+    <Content Include="images\bars\30.jpg" />
+    <Content Include="images\bars\31.jpg" />
+    <Content Include="images\bars\32.jpg" />
+    <Content Include="images\bars\33.jpg" />
+    <Content Include="images\bars\34.jpg" />
+    <Content Include="images\bars\35.jpg" />
+    <Content Include="images\bars\36.jpg" />
+    <Content Include="images\bars\37.jpg" />
+    <Content Include="images\bars\39.jpg" />
+    <Content Include="images\bars\40.jpg" />
+    <Content Include="images\bars\41.jpg" />
+    <Content Include="images\bars\42.jpg" />
+    <Content Include="images\bars\43.jpg" />
+    <Content Include="images\bars\44.jpg" />
+    <Content Include="images\bars\45.jpg" />
+    <Content Include="images\bars\46.jpg" />
+    <Content Include="images\bars\47.jpg" />
+    <Content Include="images\bars\48.jpg" />
+    <Content Include="images\bars\49.jpg" />
+    <Content Include="images\bars\5.jpg" />
+    <Content Include="images\bars\50.jpg" />
+    <Content Include="images\bars\51.jpg" />
+    <Content Include="images\bars\52.jpg" />
+    <Content Include="images\bars\53.jpg" />
+    <Content Include="images\bars\54.jpg" />
+    <Content Include="images\bars\55.jpg" />
+    <Content Include="images\bars\56.jpg" />
+    <Content Include="images\bars\57.jpg" />
+    <Content Include="images\bars\58.jpg" />
+    <Content Include="images\bars\59.jpg" />
+    <Content Include="images\bars\6.jpg" />
+    <Content Include="images\bars\60.jpg" />
+    <Content Include="images\bars\61.jpg" />
+    <Content Include="images\bars\63.jpg" />
+    <Content Include="images\bars\64.jpg" />
+    <Content Include="images\bars\65.jpg" />
+    <Content Include="images\bars\66.jpg" />
+    <Content Include="images\bars\67.jpg" />
+    <Content Include="images\bars\68.jpg" />
+    <Content Include="images\bars\69.jpg" />
+    <Content Include="images\bars\7.jpg" />
+    <Content Include="images\bars\70.jpg" />
+    <Content Include="images\bars\71.jpg" />
+    <Content Include="images\bars\73.jpg" />
+    <Content Include="images\bars\74.jpg" />
+    <Content Include="images\bars\75.jpg" />
+    <Content Include="images\bars\76.jpg" />
+    <Content Include="images\bars\77.jpg" />
+    <Content Include="images\bars\78.jpg" />
+    <Content Include="images\bars\79.jpg" />
+    <Content Include="images\bars\8.jpg" />
+    <Content Include="images\bars\80.jpg" />
+    <Content Include="images\bars\82.jpg" />
+    <Content Include="images\bars\83.jpg" />
+    <Content Include="images\bars\85.jpg" />
+    <Content Include="images\bars\87.jpg" />
+    <Content Include="images\bars\89.jpg" />
+    <Content Include="images\bars\9.jpg" />
+    <Content Include="images\bars\90.jpg" />
+    <Content Include="images\bars\92.jpg" />
+    <Content Include="images\bars\93.jpg" />
+    <Content Include="images\bars\95.jpg" />
+    <Content Include="images\bars\97.jpg" />
+    <Content Include="images\icons\back.png" />
+    <Content Include="images\icons\check.png" />
+    <Content Include="images\icons\favs.addto.png" />
+    <Content Include="images\icons\favs.removefrom.png" />
+    <Content Include="images\icons\light\appbar.bug.remove.png" />
+    <Content Include="images\icons\light\cancel.png" />
+    <Content Include="images\icons\light\feature.email.png" />
+    <Content Include="images\icons\light\like.png" />
+    <Content Include="images\icons\light\share.png" />
+    <Content Include="images\icons\like.png" />
+    <Content Include="images\icons\questionmark.png" />
+    <Content Include="images\icons\send.mylocation.png" />
+    <Content Include="images\icons\favs.png" />
+    <Content Include="images\icons\feature.email.png" />
+    <Content Include="images\icons\feature.phone.png" />
+    <Content Include="images\icons\feature.search.png" />
+    <Content Include="images\app\logo branco.png" />
+    <Content Include="images\app\logo preto.png" />
+    <Content Include="images\icons\map.direction.png" />
+    <Content Include="images\icons\map.turningpoint.png" />
+    <Content Include="images\icons\next.png" />
+    <Content Include="images\icons\refresh.png" />
+    <Content Include="images\icons\share.png" />
+    <Content Include="images\app\title.png" />
+    <Content Include="images\app\wooden.png" />
+    <Content Include="images\icons\upload.png" />
+    <Content Include="authinfo.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Toolkit.Content\ApplicationBar.Add.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="JeffWilcox.PhoneThemeManager">
+      <HintPath>..\packages\PhoneThemeManager.2.0\lib\windowsphone8\JeffWilcox.PhoneThemeManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\packages\WPtoolkit.4.2013.08.16\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\portable-net45+win8+wp8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.en.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.pt.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.pt.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.pt-BR.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.pt-BR.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\WindowsPhone\v8.0\Microsoft.Expression.Blend.WindowsPhone.targets" />
+</Project>

@@ -1,0 +1,11 @@
+.vs/
+[Bb]in/
+[Oo]bj/
+[Pp]ackages/
+PerfLogs/
+**/images/bars
+authinfo.config
+*.json
+*.suo
+*.db
+*.user

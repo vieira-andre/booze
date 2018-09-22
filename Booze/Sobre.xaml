@@ -1,0 +1,162 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Booze.Sobre"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="Black"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.Opacity="0"
+    shell:SystemTray.ForegroundColor="Black"
+    shell:SystemTray.IsVisible="True">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <phone:PhoneApplicationPage.Resources>
+        
+        <!--ListPicker-->
+        
+        <toolkit:ListPicker x:Name="lpk" ExpansionMode="FullScreenOnly" SelectionChanged="lpk_SelectionChanged">
+            <toolkit:ListPicker.FullModeItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Mode=OneTime}" FontSize="35" Margin="0,0,0,20"/>
+                </DataTemplate>
+            </toolkit:ListPicker.FullModeItemTemplate>
+        </toolkit:ListPicker>
+        
+    </phone:PhoneApplicationPage.Resources>
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid Grid.Row="0" Margin="0,15,0,10">
+            <StackPanel>
+                <Image Source="/images/app/logo branco.png" Width="200" HorizontalAlignment="Center"/>
+                <StackPanel HorizontalAlignment="Right">
+                    <TextBlock x:Name="version" Text="{Binding Path=LocalizedResources.Sobre_Versao, Source={StaticResource LocalizedStrings}}" Margin="0,5,9,0" TextDecorations="Underline" FontSize="17.5"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackPanel Margin="0,0,0,40">
+
+                <StackPanel Margin="0,0,0,15" HorizontalAlignment="Center">
+                    <TextBlock Text="{Binding Path=LocalizedResources.Sobre_Desenvolvedor, Source={StaticResource LocalizedStrings}}" Margin="0,0,0,-1.25" HorizontalAlignment="Center" FontSize="20"/>
+                    <TextBlock Text="André Vieira" Margin="0,-1.25,0,0" FontSize="20" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center">
+                    <TextBlock Text="{Binding Path=LocalizedResources.Sobre_ArteGrafica, Source={StaticResource LocalizedStrings}}" Margin="0,0,0,-1.25" HorizontalAlignment="Center" FontSize="20"/>
+                    <TextBlock Text="Lucas Penedo" Margin="0,-1.25,0,0" HorizontalAlignment="Center" FontSize="20"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <HyperlinkButton Grid.Row="1" Name="privacyPolicy" Content="{Binding Path=LocalizedResources.Sobre_PrivacyPolicy_Caption, Source={StaticResource LocalizedStrings}}" Foreground="Blue" FontSize="18" Margin="0,0,0,15" HorizontalAlignment="Left" Click="privacyPolicy_Click"/>
+
+            <Grid Grid.Row="2" Background="#FCEE21" HorizontalAlignment="Stretch">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Margin="0,4,0,2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid x:Name="contato" HorizontalAlignment="Center" Tap="Grid_Tap">
+                        <Ellipse Height="50" Width="50" Stroke="Black" StrokeThickness="3.5">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/images/icons/light/feature.email.png"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+
+                    <TextBlock Grid.Row="1" Text="{Binding Path=LocalizedResources.Sobre_Contato, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Center" FontSize="18"/>
+                </Grid>
+
+                <Grid Grid.Column="1" Margin="0,4,0,2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid x:Name="share" HorizontalAlignment="Center" Tap="Grid_Tap">
+                        <Ellipse Height="50" Width="50" Stroke="Black" StrokeThickness="3.5">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/images/icons/light/share.png" AlignmentX="Center" AlignmentY="Center"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+
+                    <TextBlock Grid.Row="1" Text="{Binding Path=LocalizedResources.Sobre_Compartilhar, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Center" FontSize="18"/>
+                </Grid>
+
+                <Grid Grid.Column="2" Margin="0,4,0,2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid x:Name="avaliar" HorizontalAlignment="Center" Tap="Grid_Tap">
+                        <Ellipse Height="50" Width="50" Stroke="Black" StrokeThickness="3.5">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/images/icons/light/like.png"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+
+                    <TextBlock Grid.Row="1" Text="{Binding Path=LocalizedResources.Sobre_Avaliar, Source={StaticResource LocalizedStrings}}" HorizontalAlignment="Center" FontSize="18"/>
+                </Grid>
+
+            </Grid>
+
+            <Button Grid.Row="3" Margin="0,5,10,0" Content="{Binding Path=LocalizedResources.Sobre_RelatarBug, Source={StaticResource LocalizedStrings}}" Foreground="Black" BorderBrush="Black" Click="Button_Click" FontSize="18" HorizontalAlignment="Right"/>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

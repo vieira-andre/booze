@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Sobre_Avaliar" xml:space="preserve">
+    <value>rate</value>
+  </data>
+  <data name="Pivot_Bairros" xml:space="preserve">
+    <value>areas</value>
+  </data>
+  <data name="Sobre_Compartilhar" xml:space="preserve">
+    <value>share</value>
+  </data>
+  <data name="Sobre_Contato" xml:space="preserve">
+    <value>contact</value>
+  </data>
+  <data name="Sobre_RelatarBug" xml:space="preserve">
+    <value>report bug</value>
+  </data>
+  <data name="ResourceFlowDirection" xml:space="preserve">
+    <value>LeftToRight</value>
+    <comment>Controls the FlowDirection for all elements in the RootFrame. Set to the traditional direction of this resource file's language</comment>
+  </data>
+  <data name="ResourceLanguage" xml:space="preserve">
+    <value>en-US</value>
+    <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
+  </data>
+  <data name="IconButton_Submeter" xml:space="preserve">
+    <value>submit</value>
+  </data>
+  <data name="MenuItem_Ajustes" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="IconButton_Favoritos" xml:space="preserve">
+    <value>favorites</value>
+  </data>
+  <data name="MenuItem_Sobre" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="Sobre_Desenvolvedor" xml:space="preserve">
+    <value>Developer:</value>
+  </data>
+  <data name="Sobre_ArteGrafica" xml:space="preserve">
+    <value>Graphic art:</value>
+  </data>
+  <data name="Sobre_Versao" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Favoritos_Null_Message" xml:space="preserve">
+    <value>There are no places added.</value>
+  </data>
+  <data name="Favoritos_Null_Caption" xml:space="preserve">
+    <value>Favorites</value>
+  </data>
+  <data name="Pivot_Proximos" xml:space="preserve">
+    <value>nearby</value>
+  </data>
+  <data name="Pivot_Todos" xml:space="preserve">
+    <value>all</value>
+  </data>
+  <data name="MenuItem_AlternarVista" xml:space="preserve">
+    <value>change view</value>
+  </data>
+  <data name="MenuItem_Atualizar" xml:space="preserve">
+    <value>update</value>
+  </data>
+  <data name="MenuItem_ExcluirLista" xml:space="preserve">
+    <value>delete all</value>
+  </data>
+  <data name="ContextMenu_Remover" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="Favoritos_Title" xml:space="preserve">
+    <value>favorites</value>
+  </data>
+  <data name="Favoritos_ExcluirLista_Caption" xml:space="preserve">
+    <value>Delete all</value>
+  </data>
+  <data name="Favoritos_ExcluirLista_Message" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="IconButton_Ajuda" xml:space="preserve">
+    <value>help</value>
+  </data>
+  <data name="IconButton_Concluir" xml:space="preserve">
+    <value>done</value>
+  </data>
+  <data name="Submit_Ajuda_Caption" xml:space="preserve">
+    <value>Place submission</value>
+  </data>
+  <data name="Submit_Ajuda_Message" xml:space="preserve">
+    <value>This feature is meant to allow users to contribute to the expansion of the application's database.
+
+If you know a bar that does not appear in the app and want to see it included, this feature allows you to send us information about it; this data will support its future addition.</value>
+  </data>
+  <data name="Submit_Bairro" xml:space="preserve">
+    <value>Area:</value>
+  </data>
+  <data name="Submit_Categoria" xml:space="preserve">
+    <value>Category:</value>
+  </data>
+  <data name="Submit_Email_Subject" xml:space="preserve">
+    <value>Place submission</value>
+  </data>
+  <data name="Submit_EstouNoBar" xml:space="preserve">
+    <value>I'm at the bar!</value>
+  </data>
+  <data name="Submit_GetLocation_Caption" xml:space="preserve">
+    <value>Get location</value>
+  </data>
+  <data name="Submit_GetLocation_Message" xml:space="preserve">
+    <value>Your geographic position will be acquired.
+
+Proceed?</value>
+  </data>
+  <data name="Submit_InfoAdc" xml:space="preserve">
+    <value>Additional information:</value>
+  </data>
+  <data name="Submit_Information_Bairro" xml:space="preserve">
+    <value>Area: </value>
+  </data>
+  <data name="Submit_Information_Nome" xml:space="preserve">
+    <value>Name: </value>
+  </data>
+  <data name="Submit_NomeLocal" xml:space="preserve">
+    <value>Place's name:</value>
+  </data>
+  <data name="Submit_NotNull_Caption" xml:space="preserve">
+    <value>Exit submission</value>
+  </data>
+  <data name="Submit_NotNull_Message" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="Submit_Opcional" xml:space="preserve">
+    <value>(optional)</value>
+  </data>
+  <data name="Submit_PreencherCampo" xml:space="preserve">
+    <value>Fill in the field (required).</value>
+  </data>
+  <data name="Submit_Reacquire_Caption" xml:space="preserve">
+    <value>Reacquire location</value>
+  </data>
+  <data name="Submit_Reacquire_Message" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="Submit_StandardText" xml:space="preserve">
+    <value>address, opening hours, phone numbers, etc.</value>
+  </data>
+  <data name="Submit_Title" xml:space="preserve">
+    <value>submission</value>
+  </data>
+  <data name="Ajustes_Permissao" xml:space="preserve">
+    <value>Allow access to your location?</value>
+  </data>
+  <data name="Ajustes_Timeout" xml:space="preserve">
+    <value>Geolocation timeout:</value>
+  </data>
+  <data name="Ajustes_Timeout_10" xml:space="preserve">
+    <value>10 seconds</value>
+  </data>
+  <data name="Ajustes_Timeout_Message" xml:space="preserve">
+    <value>This option sets the maximum time the GPS has to get your position. After this period, the best location that could be acquired is returned.
+
+The longer the timeout set, the more accurate the result tends to be.</value>
+  </data>
+  <data name="Ajustes_Timeout_30" xml:space="preserve">
+    <value>30 seconds</value>
+  </data>
+  <data name="Ajustes_Timeout_Subtle" xml:space="preserve">
+    <value>(tap for details)</value>
+  </data>
+  <data name="Ajustes_Title" xml:space="preserve">
+    <value>settings</value>
+  </data>
+  <data name="Detalhes_Bairro" xml:space="preserve">
+    <value>Area: </value>
+  </data>
+  <data name="Detalhes_Endereco" xml:space="preserve">
+    <value>Address: </value>
+  </data>
+  <data name="Detalhes_Favoritos_Add" xml:space="preserve">
+    <value>Added to favorites.</value>
+  </data>
+  <data name="Detalhes_Favoritos_Rem" xml:space="preserve">
+    <value>Removed from favorites.</value>
+  </data>
+  <data name="Detalhes_Horarios" xml:space="preserve">
+    <value>Opening hours</value>
+  </data>
+  <data name="Detalhes_Ligar_NA" xml:space="preserve">
+    <value>No number.</value>
+  </data>
+  <data name="Detalhes_Ligar_Numeros" xml:space="preserve">
+    <value>Numbers:</value>
+  </data>
+  <data name="IconButton_Desfavoritar" xml:space="preserve">
+    <value>remove</value>
+  </data>
+  <data name="IconButton_Favoritar" xml:space="preserve">
+    <value>add</value>
+  </data>
+  <data name="IconButton_Ligar" xml:space="preserve">
+    <value>call</value>
+  </data>
+  <data name="IconButton_Navegacao" xml:space="preserve">
+    <value>navigation</value>
+  </data>
+  <data name="IconButton_Trajeto" xml:space="preserve">
+    <value>route</value>
+  </data>
+  <data name="MessageBox_Erro_Caption" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="MessageBox_Erro_Localizacao" xml:space="preserve">
+    <value>The current position could not be obtained.
+
+Make sure that the location services of your device are enabled.</value>
+  </data>
+  <data name="MessageBox_Permissao_Caption" xml:space="preserve">
+    <value>Allow access to your location?</value>
+  </data>
+  <data name="MessageBox_Permissao_Message" xml:space="preserve">
+    <value>This feature needs to know your location in order to work.
+
+The permission can be changed at any time under the /settings/ menu.</value>
+  </data>
+  <data name="Sobre_Compartilhar_Message" xml:space="preserve">
+    <value>Check out "Booze" for Windows Phone</value>
+  </data>
+  <data name="Sobre_Compartilhar_RedesSociais" xml:space="preserve">
+    <value>Social networks</value>
+  </data>
+  <data name="Sobre_Contato_Subject" xml:space="preserve">
+    <value>(insert the subject)</value>
+  </data>
+  <data name="Sobre_RelatarBug_Subject" xml:space="preserve">
+    <value>Bug report</value>
+  </data>
+  <data name="SysTray_Localizacao" xml:space="preserve">
+    <value>Acquiring your position...</value>
+  </data>
+  <data name="SysTray_Trajeto" xml:space="preserve">
+    <value>Calculating route...</value>
+  </data>
+  <data name="Trajeto_Distancia" xml:space="preserve">
+    <value>Distance:</value>
+  </data>
+  <data name="DiaSemana_Domingo" xml:space="preserve">
+    <value>Sunday</value>
+  </data>
+  <data name="DiaSemana_Quarta" xml:space="preserve">
+    <value>Wednesday</value>
+  </data>
+  <data name="DiaSemana_Quinta" xml:space="preserve">
+    <value>Thursday</value>
+  </data>
+  <data name="DiaSemana_Sabado" xml:space="preserve">
+    <value>Saturday</value>
+  </data>
+  <data name="DiaSemana_Segunda" xml:space="preserve">
+    <value>Monday</value>
+  </data>
+  <data name="DiaSemana_Sexta" xml:space="preserve">
+    <value>Friday</value>
+  </data>
+  <data name="DiaSemana_Terca" xml:space="preserve">
+    <value>Tuesday</value>
+  </data>
+  <data name="Hora_As" xml:space="preserve">
+    <value> - </value>
+  </data>
+  <data name="MenuItem_Relatar" xml:space="preserve">
+    <value>report information error</value>
+  </data>
+  <data name="RelatarErro" xml:space="preserve">
+    <value>Report information error</value>
+  </data>
+  <data name="Horarios_NA" xml:space="preserve">
+    <value>(not available)</value>
+  </data>
+  <data name="Local" xml:space="preserve">
+    <value>Place: </value>
+  </data>
+  <data name="Ajustes_Timeout_Title" xml:space="preserve">
+    <value>Geolocation timeout</value>
+  </data>
+  <data name="Ajustes_Timeout_None" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="Trajeto_SemConexao_Msg" xml:space="preserve">
+    <value>This feature needs Internet access to perform the calculation of the route and its waypoints, besides the occasional download of maps.
+
+Make sure to provide the connection via 3/4G or Wi-Fi and try again.</value>
+  </data>
+  <data name="Trajeto_SemConexao_Title" xml:space="preserve">
+    <value>No connection available</value>
+  </data>
+  <data name="Busca_NoPlace" xml:space="preserve">
+    <value>No place found in this search range.</value>
+  </data>
+  <data name="Sobre_PrivacyPolicy_Caption" xml:space="preserve">
+    <value>Privacy policy</value>
+  </data>
+  <data name="Sobre_PrivacyPolicy_Link" xml:space="preserve">
+    <value>https://1drv.ms/b/s!AiXBYMBQYdbyb8g_g_UPbUQNcxI</value>
+  </data>
+  <data name="DiaSemana_TodosDias" xml:space="preserve">
+    <value>Everyday</value>
+  </data>
+  <data name="App_Review_Message" xml:space="preserve">
+    <value>Thanks for using Booze!
+
+Would you like to rate and review the app in the Windows Store?</value>
+  </data>
+  <data name="App_Review_Title" xml:space="preserve">
+    <value>Rate/review the app</value>
+  </data>
+</root>
