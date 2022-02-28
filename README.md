@@ -1,5 +1,5 @@
 ## Booze
-[At Microsoft Store](https://www.microsoft.com/p/booze/9nblggh0fxz6)
+[At Microsoft Store](https://i.imgur.com/oqdJ7Hq.png) (snapshot)
 
 ### Description
 
